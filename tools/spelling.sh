@@ -1,7 +1,7 @@
 #!/bin/bash
 
 MISSPELL_ARGS=""
-if [ $1 = "correct" ]; then
+if [[ $1 == "correct" ]]; then
     MISSPELL_ARGS="-w"
 fi
 
