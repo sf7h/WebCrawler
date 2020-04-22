@@ -10,7 +10,7 @@ the program takes up to two arguments; the first is the seed adn the second is t
 * sbt 1.3.0
 * Java 8
 
-## Projecte Tree Structure
+## Project Tree Structure
 
     ├── main
 
