@@ -1,12 +1,7 @@
 #!/bin/bash
 
-sh ./install-misspell.sh &> /dev/null
+sh ./install-misspell.sh &>/dev/null
 wait
 
-FILES= git ls-files | xargs ./bin/misspell
+FILES= git ls-files | xargs ./bin/misspell -error
 rm -rf ./bin
-if test -z "$FILES" ; then
-  echo "ERROR: you have misspelled files above, please run locally the script in 'tools/spelling correct'"
-  exit 1
-fi
-
