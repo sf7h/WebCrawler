@@ -1,4 +1,6 @@
 language: java
 
+before_script:
+  - chmod +x ./tools/spelling.sh
 script:
   - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then sh ./tools/spelling.sh ; fi'
