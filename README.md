@@ -2,7 +2,7 @@
 
 This is a CLI which returns the sitemap of a website given a domaine name.\
 the result is stored in a file named _sitemap.txt_ at the root of the project.\
-the program takes up to two arguments; the first is the seed adn the second is the depth of the crawling. If the latter is not specified, we continue the crawling until all URLs are visited.
+the program takes up to two arguments; the first is the seed and the second is the depth of the crawling. If the latter is not specified, we continue the crawling until all URLs are visited.
 
 ## Pre-requisites
 

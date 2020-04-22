@@ -6,7 +6,7 @@ wait
 FILES= git ls-files | xargs ./bin/misspell
 rm -rf ./bin
 if ${FILES}; then
-  echo "you have misspelled files above, please tun locally the script in 'tools/spelling correct'"
+  echo "ERROR: you have misspelled files above, please tun locally the script in 'tools/spelling correct'"
   exit 1
 fi
 
